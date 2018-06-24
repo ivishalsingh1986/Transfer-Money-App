@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AACE5ED41D3A3E6D94F0C7F2 /* Pods_TransferMoney.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D62BCC6DE21C5F87D9202995 /* Pods_TransferMoney.framework */; };
+		B512E1F712C9AEFC588D2794 /* Pods_TransferMoneyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F58039F8646D16C9D14B9F0D /* Pods_TransferMoneyTests.framework */; };
+		DC407F0320DCC2E70091B1D9 /* TransferMoneyBaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC407F0120DCC2E70091B1D9 /* TransferMoneyBaseApi.swift */; };
+		DC407F0420DCC2E70091B1D9 /* TransferMoneyConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC407F0220DCC2E70091B1D9 /* TransferMoneyConfig.swift */; };
+		DC407F0620DCC6890091B1D9 /* RequestTransferMoneyApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC407F0520DCC6890091B1D9 /* RequestTransferMoneyApi.swift */; };
+		DC407F0920DE49D00091B1D9 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC407F0820DE49D00091B1D9 /* String.swift */; };
+		DC921DAB20DB35F400E78FB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DAA20DB35F400E78FB2 /* AppDelegate.swift */; };
+		DC921DB020DB35F400E78FB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC921DAE20DB35F400E78FB2 /* Main.storyboard */; };
+		DC921DB220DB35F400E78FB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC921DB120DB35F400E78FB2 /* Assets.xcassets */; };
+		DC921DB520DB35F400E78FB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC921DB320DB35F400E78FB2 /* LaunchScreen.storyboard */; };
+		DC921DC020DB35F500E78FB2 /* TransferMoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DBF20DB35F500E78FB2 /* TransferMoneyTests.swift */; };
+		DC921DF320DB44A700E78FB2 /* TransactionStatusPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DED20DB44A700E78FB2 /* TransactionStatusPresenter.swift */; };
+		DC921DF420DB44A700E78FB2 /* TransactionStatusWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DEE20DB44A700E78FB2 /* TransactionStatusWorker.swift */; };
+		DC921DF520DB44A700E78FB2 /* TransactionStatusRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DEF20DB44A700E78FB2 /* TransactionStatusRouter.swift */; };
+		DC921DF620DB44A700E78FB2 /* TransactionStatusModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DF020DB44A700E78FB2 /* TransactionStatusModels.swift */; };
+		DC921DF720DB44A700E78FB2 /* TransactionStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DF120DB44A700E78FB2 /* TransactionStatusViewController.swift */; };
+		DC921DF820DB44A700E78FB2 /* TransactionStatusInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DF220DB44A700E78FB2 /* TransactionStatusInteractor.swift */; };
+		DC921DFF20DB450600E78FB2 /* InputAmountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DF920DB450600E78FB2 /* InputAmountPresenter.swift */; };
+		DC921E0020DB450600E78FB2 /* InputAmountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DF920DB450600E78FB2 /* InputAmountPresenter.swift */; };
+		DC921E0120DB450600E78FB2 /* InputAmountWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DFA20DB450600E78FB2 /* InputAmountWorker.swift */; };
+		DC921E0220DB450600E78FB2 /* InputAmountWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DFA20DB450600E78FB2 /* InputAmountWorker.swift */; };
+		DC921E0320DB450600E78FB2 /* InputAmountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DFB20DB450600E78FB2 /* InputAmountRouter.swift */; };
+		DC921E0420DB450600E78FB2 /* InputAmountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DFB20DB450600E78FB2 /* InputAmountRouter.swift */; };
+		DC921E0520DB450600E78FB2 /* InputAmountModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DFC20DB450600E78FB2 /* InputAmountModels.swift */; };
+		DC921E0620DB450600E78FB2 /* InputAmountModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DFC20DB450600E78FB2 /* InputAmountModels.swift */; };
+		DC921E0720DB450600E78FB2 /* InputAmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DFD20DB450600E78FB2 /* InputAmountViewController.swift */; };
+		DC921E0820DB450600E78FB2 /* InputAmountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DFD20DB450600E78FB2 /* InputAmountViewController.swift */; };
+		DC921E0920DB450600E78FB2 /* InputAmountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DFE20DB450600E78FB2 /* InputAmountInteractor.swift */; };
+		DC921E0A20DB450600E78FB2 /* InputAmountInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921DFE20DB450600E78FB2 /* InputAmountInteractor.swift */; };
+		DC921E0F20DB575900E78FB2 /* NetworkErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921E0D20DB575900E78FB2 /* NetworkErrorModel.swift */; };
+		DC921E1220DB582A00E78FB2 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921E1120DB582A00E78FB2 /* Connectivity.swift */; };
+		DC921E1420DB586300E78FB2 /* UIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921E1320DB586200E78FB2 /* UIUtils.swift */; };
+		DC921E1620DB5C3700E78FB2 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921E1520DB5C3700E78FB2 /* CommonConstants.swift */; };
+		DC921E1820DCC0C100E78FB2 /* ApiDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC921E1720DCC0C000E78FB2 /* ApiDispatcher.swift */; };
+		DCEEE71320DF46AD0058E43E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DCEEE71220DF46AD0058E43E /* README.md */; };
+		DCEEE71820DF4B6C0058E43E /* StatusScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = DCEEE71520DF4B6C0058E43E /* StatusScreen.png */; };
+		DCEEE71920DF4B6C0058E43E /* demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = DCEEE71620DF4B6C0058E43E /* demo.gif */; };
+		DCEEE71A20DF4B6C0058E43E /* EnterAmount.png in Resources */ = {isa = PBXBuildFile; fileRef = DCEEE71720DF4B6C0058E43E /* EnterAmount.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC921DBC20DB35F500E78FB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC921D9F20DB35F400E78FB2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC921DA620DB35F400E78FB2;
+			remoteInfo = TransferMoney;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		099FC9525C8BFD3D7AB8171F /* Pods-TransferMoney.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferMoney.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransferMoney/Pods-TransferMoney.release.xcconfig"; sourceTree = "<group>"; };
+		AFDC11955688B435BDCFB2F5 /* Pods-TransferMoney.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferMoney.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransferMoney/Pods-TransferMoney.debug.xcconfig"; sourceTree = "<group>"; };
+		CD2437566B0BF10BACD4CF9E /* Pods-TransferMoneyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferMoneyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TransferMoneyTests/Pods-TransferMoneyTests.release.xcconfig"; sourceTree = "<group>"; };
+		D62BCC6DE21C5F87D9202995 /* Pods_TransferMoney.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransferMoney.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC407F0120DCC2E70091B1D9 /* TransferMoneyBaseApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferMoneyBaseApi.swift; sourceTree = "<group>"; };
+		DC407F0220DCC2E70091B1D9 /* TransferMoneyConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransferMoneyConfig.swift; sourceTree = "<group>"; };
+		DC407F0520DCC6890091B1D9 /* RequestTransferMoneyApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTransferMoneyApi.swift; sourceTree = "<group>"; };
+		DC407F0820DE49D00091B1D9 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		DC921DA720DB35F400E78FB2 /* TransferMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransferMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC921DAA20DB35F400E78FB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC921DAF20DB35F400E78FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC921DB120DB35F400E78FB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC921DB420DB35F400E78FB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC921DB620DB35F400E78FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC921DBB20DB35F500E78FB2 /* TransferMoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransferMoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC921DBF20DB35F500E78FB2 /* TransferMoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferMoneyTests.swift; sourceTree = "<group>"; };
+		DC921DC120DB35F500E78FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC921DED20DB44A700E78FB2 /* TransactionStatusPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStatusPresenter.swift; sourceTree = "<group>"; };
+		DC921DEE20DB44A700E78FB2 /* TransactionStatusWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStatusWorker.swift; sourceTree = "<group>"; };
+		DC921DEF20DB44A700E78FB2 /* TransactionStatusRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStatusRouter.swift; sourceTree = "<group>"; };
+		DC921DF020DB44A700E78FB2 /* TransactionStatusModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStatusModels.swift; sourceTree = "<group>"; };
+		DC921DF120DB44A700E78FB2 /* TransactionStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStatusViewController.swift; sourceTree = "<group>"; };
+		DC921DF220DB44A700E78FB2 /* TransactionStatusInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionStatusInteractor.swift; sourceTree = "<group>"; };
+		DC921DF920DB450600E78FB2 /* InputAmountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAmountPresenter.swift; sourceTree = "<group>"; };
+		DC921DFA20DB450600E78FB2 /* InputAmountWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAmountWorker.swift; sourceTree = "<group>"; };
+		DC921DFB20DB450600E78FB2 /* InputAmountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAmountRouter.swift; sourceTree = "<group>"; };
+		DC921DFC20DB450600E78FB2 /* InputAmountModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAmountModels.swift; sourceTree = "<group>"; };
+		DC921DFD20DB450600E78FB2 /* InputAmountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAmountViewController.swift; sourceTree = "<group>"; };
+		DC921DFE20DB450600E78FB2 /* InputAmountInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAmountInteractor.swift; sourceTree = "<group>"; };
+		DC921E0D20DB575900E78FB2 /* NetworkErrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkErrorModel.swift; sourceTree = "<group>"; };
+		DC921E1120DB582A00E78FB2 /* Connectivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
+		DC921E1320DB586200E78FB2 /* UIUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIUtils.swift; sourceTree = "<group>"; };
+		DC921E1520DB5C3700E78FB2 /* CommonConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
+		DC921E1720DCC0C000E78FB2 /* ApiDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDispatcher.swift; sourceTree = "<group>"; };
+		DCEEE71220DF46AD0058E43E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DCEEE71520DF4B6C0058E43E /* StatusScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StatusScreen.png; sourceTree = "<group>"; };
+		DCEEE71620DF4B6C0058E43E /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
+		DCEEE71720DF4B6C0058E43E /* EnterAmount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EnterAmount.png; sourceTree = "<group>"; };
+		DE8BDA37824AB2044146ED8C /* Pods-TransferMoneyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TransferMoneyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TransferMoneyTests/Pods-TransferMoneyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F58039F8646D16C9D14B9F0D /* Pods_TransferMoneyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TransferMoneyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC921DA420DB35F400E78FB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AACE5ED41D3A3E6D94F0C7F2 /* Pods_TransferMoney.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC921DB820DB35F500E78FB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B512E1F712C9AEFC588D2794 /* Pods_TransferMoneyTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E66CC826FC7D1A303FE10C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFDC11955688B435BDCFB2F5 /* Pods-TransferMoney.debug.xcconfig */,
+				099FC9525C8BFD3D7AB8171F /* Pods-TransferMoney.release.xcconfig */,
+				DE8BDA37824AB2044146ED8C /* Pods-TransferMoneyTests.debug.xcconfig */,
+				CD2437566B0BF10BACD4CF9E /* Pods-TransferMoneyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BB5AB033EAEDCC14ADD52F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D62BCC6DE21C5F87D9202995 /* Pods_TransferMoney.framework */,
+				F58039F8646D16C9D14B9F0D /* Pods_TransferMoneyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC407F0720DE49910091B1D9 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				DC407F0820DE49D00091B1D9 /* String.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		DC921D9E20DB35F400E78FB2 = {
+			isa = PBXGroup;
+			children = (
+				DC921DA920DB35F400E78FB2 /* TransferMoney */,
+				DC921DBE20DB35F500E78FB2 /* TransferMoneyTests */,
+				DC921DA820DB35F400E78FB2 /* Products */,
+				DCEEE71420DF496F0058E43E /* documentation */,
+				0E66CC826FC7D1A303FE10C6 /* Pods */,
+				DCEEE71220DF46AD0058E43E /* README.md */,
+				8BB5AB033EAEDCC14ADD52F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC921DA820DB35F400E78FB2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC921DA720DB35F400E78FB2 /* TransferMoney.app */,
+				DC921DBB20DB35F500E78FB2 /* TransferMoneyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC921DA920DB35F400E78FB2 /* TransferMoney */ = {
+			isa = PBXGroup;
+			children = (
+				DC921DCE20DB362B00E78FB2 /* AppDelegate */,
+				DC407F0720DE49910091B1D9 /* Extention */,
+				DC921E1020DB57AC00E78FB2 /* Common */,
+				DC921E0B20DB574400E78FB2 /* Networking */,
+				DCEEE71120DF324E0058E43E /* Scenes */,
+				DC921DCB20DB361800E78FB2 /* StoryBoards */,
+				DC921DCA20DB361000E78FB2 /* Assets */,
+			);
+			path = TransferMoney;
+			sourceTree = "<group>";
+		};
+		DC921DBE20DB35F500E78FB2 /* TransferMoneyTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC921DBF20DB35F500E78FB2 /* TransferMoneyTests.swift */,
+				DC921DC120DB35F500E78FB2 /* Info.plist */,
+			);
+			path = TransferMoneyTests;
+			sourceTree = "<group>";
+		};
+		DC921DCA20DB361000E78FB2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DC921DB120DB35F400E78FB2 /* Assets.xcassets */,
+				DC921DB620DB35F400E78FB2 /* Info.plist */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DC921DCB20DB361800E78FB2 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				DC921DAE20DB35F400E78FB2 /* Main.storyboard */,
+				DC921DB320DB35F400E78FB2 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		DC921DCC20DB361D00E78FB2 /* StatusScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DC921DED20DB44A700E78FB2 /* TransactionStatusPresenter.swift */,
+				DC921DEE20DB44A700E78FB2 /* TransactionStatusWorker.swift */,
+				DC921DEF20DB44A700E78FB2 /* TransactionStatusRouter.swift */,
+				DC921DF020DB44A700E78FB2 /* TransactionStatusModels.swift */,
+				DC921DF120DB44A700E78FB2 /* TransactionStatusViewController.swift */,
+				DC921DF220DB44A700E78FB2 /* TransactionStatusInteractor.swift */,
+			);
+			path = StatusScreen;
+			sourceTree = "<group>";
+		};
+		DC921DCD20DB362700E78FB2 /* EnterAmount */ = {
+			isa = PBXGroup;
+			children = (
+				DC921DFE20DB450600E78FB2 /* InputAmountInteractor.swift */,
+				DC921DF920DB450600E78FB2 /* InputAmountPresenter.swift */,
+				DC921DFA20DB450600E78FB2 /* InputAmountWorker.swift */,
+				DC921DFB20DB450600E78FB2 /* InputAmountRouter.swift */,
+				DC921DFC20DB450600E78FB2 /* InputAmountModels.swift */,
+				DC921DFD20DB450600E78FB2 /* InputAmountViewController.swift */,
+				DC407F0520DCC6890091B1D9 /* RequestTransferMoneyApi.swift */,
+			);
+			path = EnterAmount;
+			sourceTree = "<group>";
+		};
+		DC921DCE20DB362B00E78FB2 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DC921DAA20DB35F400E78FB2 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		DC921E0B20DB574400E78FB2 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DC921E1720DCC0C000E78FB2 /* ApiDispatcher.swift */,
+				DC407F0120DCC2E70091B1D9 /* TransferMoneyBaseApi.swift */,
+				DC407F0220DCC2E70091B1D9 /* TransferMoneyConfig.swift */,
+				DC921E1120DB582A00E78FB2 /* Connectivity.swift */,
+				DC921E0D20DB575900E78FB2 /* NetworkErrorModel.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DC921E1020DB57AC00E78FB2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DC921E1320DB586200E78FB2 /* UIUtils.swift */,
+				DC921E1520DB5C3700E78FB2 /* CommonConstants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DCEEE71120DF324E0058E43E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DC921DCD20DB362700E78FB2 /* EnterAmount */,
+				DC921DCC20DB361D00E78FB2 /* StatusScreen */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DCEEE71420DF496F0058E43E /* documentation */ = {
+			isa = PBXGroup;
+			children = (
+				DCEEE71620DF4B6C0058E43E /* demo.gif */,
+				DCEEE71720DF4B6C0058E43E /* EnterAmount.png */,
+				DCEEE71520DF4B6C0058E43E /* StatusScreen.png */,
+			);
+			path = documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC921DA620DB35F400E78FB2 /* TransferMoney */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC921DC420DB35F500E78FB2 /* Build configuration list for PBXNativeTarget "TransferMoney" */;
+			buildPhases = (
+				1EBBCA388EF8EC1DF8BF386D /* [CP] Check Pods Manifest.lock */,
+				DC921DA320DB35F400E78FB2 /* Sources */,
+				DC921DA420DB35F400E78FB2 /* Frameworks */,
+				DC921DA520DB35F400E78FB2 /* Resources */,
+				D7405A6C19B524C5AB44916B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransferMoney;
+			productName = TransferMoney;
+			productReference = DC921DA720DB35F400E78FB2 /* TransferMoney.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC921DBA20DB35F500E78FB2 /* TransferMoneyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC921DC720DB35F500E78FB2 /* Build configuration list for PBXNativeTarget "TransferMoneyTests" */;
+			buildPhases = (
+				6641AA2D158E50CBBE549B8B /* [CP] Check Pods Manifest.lock */,
+				DC921DB720DB35F500E78FB2 /* Sources */,
+				DC921DB820DB35F500E78FB2 /* Frameworks */,
+				DC921DB920DB35F500E78FB2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC921DBD20DB35F500E78FB2 /* PBXTargetDependency */,
+			);
+			name = TransferMoneyTests;
+			productName = TransferMoneyTests;
+			productReference = DC921DBB20DB35F500E78FB2 /* TransferMoneyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC921D9F20DB35F400E78FB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Vishal Singh";
+				TargetAttributes = {
+					DC921DA620DB35F400E78FB2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DC921DBA20DB35F500E78FB2 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC921DA620DB35F400E78FB2;
+					};
+				};
+			};
+			buildConfigurationList = DC921DA220DB35F400E78FB2 /* Build configuration list for PBXProject "TransferMoney" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC921D9E20DB35F400E78FB2;
+			productRefGroup = DC921DA820DB35F400E78FB2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC921DA620DB35F400E78FB2 /* TransferMoney */,
+				DC921DBA20DB35F500E78FB2 /* TransferMoneyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC921DA520DB35F400E78FB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC921DB520DB35F400E78FB2 /* LaunchScreen.storyboard in Resources */,
+				DCEEE71920DF4B6C0058E43E /* demo.gif in Resources */,
+				DC921DB220DB35F400E78FB2 /* Assets.xcassets in Resources */,
+				DCEEE71320DF46AD0058E43E /* README.md in Resources */,
+				DCEEE71A20DF4B6C0058E43E /* EnterAmount.png in Resources */,
+				DC921DB020DB35F400E78FB2 /* Main.storyboard in Resources */,
+				DCEEE71820DF4B6C0058E43E /* StatusScreen.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC921DB920DB35F500E78FB2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EBBCA388EF8EC1DF8BF386D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TransferMoney-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6641AA2D158E50CBBE549B8B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TransferMoneyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7405A6C19B524C5AB44916B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TransferMoney/Pods-TransferMoney-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TransferMoney/Pods-TransferMoney-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC921DA320DB35F400E78FB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC921DF720DB44A700E78FB2 /* TransactionStatusViewController.swift in Sources */,
+				DC921E1820DCC0C100E78FB2 /* ApiDispatcher.swift in Sources */,
+				DC407F0920DE49D00091B1D9 /* String.swift in Sources */,
+				DC921DAB20DB35F400E78FB2 /* AppDelegate.swift in Sources */,
+				DC921E0F20DB575900E78FB2 /* NetworkErrorModel.swift in Sources */,
+				DC921E0520DB450600E78FB2 /* InputAmountModels.swift in Sources */,
+				DC921E1620DB5C3700E78FB2 /* CommonConstants.swift in Sources */,
+				DC407F0320DCC2E70091B1D9 /* TransferMoneyBaseApi.swift in Sources */,
+				DC921DF320DB44A700E78FB2 /* TransactionStatusPresenter.swift in Sources */,
+				DC407F0620DCC6890091B1D9 /* RequestTransferMoneyApi.swift in Sources */,
+				DC921E1420DB586300E78FB2 /* UIUtils.swift in Sources */,
+				DC921DF620DB44A700E78FB2 /* TransactionStatusModels.swift in Sources */,
+				DC921E0320DB450600E78FB2 /* InputAmountRouter.swift in Sources */,
+				DC921E0720DB450600E78FB2 /* InputAmountViewController.swift in Sources */,
+				DC921DF820DB44A700E78FB2 /* TransactionStatusInteractor.swift in Sources */,
+				DC921E0920DB450600E78FB2 /* InputAmountInteractor.swift in Sources */,
+				DC921DF520DB44A700E78FB2 /* TransactionStatusRouter.swift in Sources */,
+				DC921E1220DB582A00E78FB2 /* Connectivity.swift in Sources */,
+				DC921DF420DB44A700E78FB2 /* TransactionStatusWorker.swift in Sources */,
+				DC921E0120DB450600E78FB2 /* InputAmountWorker.swift in Sources */,
+				DC407F0420DCC2E70091B1D9 /* TransferMoneyConfig.swift in Sources */,
+				DC921DFF20DB450600E78FB2 /* InputAmountPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC921DB720DB35F500E78FB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC921E0020DB450600E78FB2 /* InputAmountPresenter.swift in Sources */,
+				DC921DC020DB35F500E78FB2 /* TransferMoneyTests.swift in Sources */,
+				DC921E0220DB450600E78FB2 /* InputAmountWorker.swift in Sources */,
+				DC921E0420DB450600E78FB2 /* InputAmountRouter.swift in Sources */,
+				DC921E0820DB450600E78FB2 /* InputAmountViewController.swift in Sources */,
+				DC921E0620DB450600E78FB2 /* InputAmountModels.swift in Sources */,
+				DC921E0A20DB450600E78FB2 /* InputAmountInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC921DBD20DB35F500E78FB2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC921DA620DB35F400E78FB2 /* TransferMoney */;
+			targetProxy = DC921DBC20DB35F500E78FB2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC921DAE20DB35F400E78FB2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC921DAF20DB35F400E78FB2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC921DB320DB35F400E78FB2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC921DB420DB35F400E78FB2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC921DC220DB35F500E78FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC921DC320DB35F500E78FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC921DC520DB35F500E78FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFDC11955688B435BDCFB2F5 /* Pods-TransferMoney.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/TransferMoney/Assets/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DemoApp.TransferMoney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC921DC620DB35F500E78FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 099FC9525C8BFD3D7AB8171F /* Pods-TransferMoney.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "$(SRCROOT)/TransferMoney/Assets/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DemoApp.TransferMoney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC921DC820DB35F500E78FB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE8BDA37824AB2044146ED8C /* Pods-TransferMoneyTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransferMoneyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DemoApp.TransferMoneyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransferMoney.app/TransferMoney";
+			};
+			name = Debug;
+		};
+		DC921DC920DB35F500E78FB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD2437566B0BF10BACD4CF9E /* Pods-TransferMoneyTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TransferMoneyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DemoApp.TransferMoneyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TransferMoney.app/TransferMoney";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC921DA220DB35F400E78FB2 /* Build configuration list for PBXProject "TransferMoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC921DC220DB35F500E78FB2 /* Debug */,
+				DC921DC320DB35F500E78FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC921DC420DB35F500E78FB2 /* Build configuration list for PBXNativeTarget "TransferMoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC921DC520DB35F500E78FB2 /* Debug */,
+				DC921DC620DB35F500E78FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC921DC720DB35F500E78FB2 /* Build configuration list for PBXNativeTarget "TransferMoneyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC921DC820DB35F500E78FB2 /* Debug */,
+				DC921DC920DB35F500E78FB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC921D9F20DB35F400E78FB2 /* Project object */;
+}
