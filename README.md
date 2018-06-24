@@ -22,7 +22,7 @@ I started by using the excellent VIP templates from Raymond Law via [Clean Swift
 ### Requirements
 
 * [Xcode 9.3](http://adcdownload.apple.com/Developer_Tools/Xcode_9/Xcode_9.zip)
-* [CocoaPods v1.1.0rc2](https://github.com/CocoaPods/CocoaPods/releases/tag/1.1.0.rc.2)
+* [CocoaPods](hhttps://cocoapods.org/)
 
 
 ### Environment
