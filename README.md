@@ -15,9 +15,9 @@ I started by using the excellent VIP templates from Raymond Law via [Clean Swift
 
 ### Demo
 
-<image src="documentation/demo/demo.gif" width=316 height=590/>
-<image src="documentation/demo/EnterAmount.png" width=316 height=590/>
-<image src="documentation/demo/StatusScreen.png" width=316 height=590/>
+<image src="documentation/demo.gif" width=316 height=590/>
+<image src="documentation/EnterAmount.png" width=316 height=590/>
+<image src="documentation/StatusScreen.png" width=316 height=590/>
 
 ### Requirements
 
